@@ -1,0 +1,69 @@
+td, button, p {
+	font-family: Consolas,monaco,monospace;
+}
+button {
+	padding: 1px 6px;
+	font-family: Consolas,monaco,monospace;
+}
+table {
+	border-spacing: 0;
+}
+canvas {
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: -999;
+}
+.tabbtn {
+	color: black;
+	background: #F0F0F0;
+	border: 1px solid #12207A;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 13px;
+	vertical-align: top;
+	font-weight: bold;
+	font-size: large;
+}
+
+
+.tabbtn:hover {
+	color: #FFFFFF;
+	background: #5A67C4;
+}
+
+
+.pointbtn {
+	color: black;
+	background: #F0F0F0;
+	border: 1px solid #12207A;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 13px;
+	vertical-align: top;
+}
+
+
+.pointbtn:hover {
+	color: #FFFFFF;
+	background: #0000F0;
+}
+
+.lockedbtn {
+	
+	color: black;
+	background: #7c8dad;
+	border: 1px solid #443284;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 13px;
+	vertical-align: top;
+}
+
+.lockedbtn:hover {
+	color: #000000;
+	background: #443284;
+}

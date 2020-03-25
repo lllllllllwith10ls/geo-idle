@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="break-eternity.js"></script>
+		<script src="main.js"></script>
+		<script src="save.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body onload="start()">
+		<button id="0dtab" onclick="showTab('0d')" class="tabbtn">0D</button>
+		<button id="settingsTab" onclick="showTab('settings')" class="tabbtn">Settings</button>
+		<div id="0d" class="tab">
+			<p>You have <span id="point">0</span> points</p>
+			<button onclick="maxAll()" class="pointbtn">Max all</button>
+			<table style="width:100%">
+				<tbody>
+					<tr id="tier1">
+						<td>
+							Tier 1 Point Generator (<span id="tier1Amount">0</span>)
+						</td>
+						<td>
+							x<span id="tier1Mult">1</span>
+						</td>
+						<td>
+							<button id="buy1Tier1" onclick="buyTier(1)" align="right" class="pointbtn">Cost: <span id="tier1Cost">10</span> points</button>
+						</td>
+						<td>
+							<button id="buyMaxTier1" onclick="buyMaxTier(1)" align="right" class="pointbtn">Buy Max</button>
+						</td>
+					</tr>
+					<tr id="tier2">
+						<td>
+							Tier 2 Point Generator (<span id="tier2Amount">0</span>)
+						</td>
+						<td>
+							x<span id="tier2Mult">1</span>
+						</td>
+						<td>
+							<button id="buy1Tier2" onclick="buyTier(2)" align="right" class="pointbtn">Cost: <span id="tier2Cost">10</span> points</button>
+						</td>
+						<td>
+							<button id="buyMaxTier2" onclick="buyMaxTier(2)" align="right" class="pointbtn">Buy Max</button>
+						</td>
+					</tr>
+					<tr id="tier3">
+						<td>
+							Tier 3 Point Generator (<span id="tier3Amount">0</span>)
+						</td>
+						<td>
+							x<span id="tier3Mult">1</span>
+						</td>
+						<td>
+							<button id="buy1Tier3" onclick="buyTier(3)" align="right" class="pointbtn">Cost: <span id="tier3Cost">10</span> points</button>
+						</td>
+						<td>
+							<button id="buyMaxTier3" onclick="buyMaxTier(3)" align="right" class="pointbtn">Buy Max</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+      <button class="pointbtn" style="margin: auto;" onclick="dotBoost()" id="dotBoost">Gain a dot boost for a better multiplier.<br/>Requires <span id="dotBoostCost">150</span> tier 3 generators.</button>
+      <p>You have <span id="dotBoosts">0</span> dot boosts.</p>
+		</div>
+		<div id="settings" class="tab" style="display: none">
+			<button id="saveButton" onclick="save()" class="pointbtn">Save</button>
+			<button id="loadButton" onclick="load()" class="pointbtn">Load</button>
+			<button id="exportButton" onclick="exp()" class="pointbtn">Export</button>
+			<button id="importButton" onclick="imp()" class="pointbtn">Import</button>
+			<button id="resetButton" onclick="reset()" class="pointbtn">Reset</button>
+			<div style="display:none;position:fixed;left:0;top:0"><textarea id="exportOutput" style="color:black; width: 200px; height: 55px;"></textarea></div>
+	
+		</div>
+	</body>
+</html>
